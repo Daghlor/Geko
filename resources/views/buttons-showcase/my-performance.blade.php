@@ -7,6 +7,8 @@
         </div>
     </x-slot>
 
+    <p class="py-4 text-gray-600 dark:text-gray-400">Tabla de usuarios.</p>
+
     <div class="py-4">
         <!-- Campos arriba -->
         <div class="mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
@@ -76,19 +78,19 @@
                 <!-- Cuerpo de la tabla -->
                 <tbody>
                     <tr class="dark:bg-eval-0">
-                        <td class="border-b p-2 dark:text-white">Dato 1</td>
-                        <td class="border-b p-2 dark:text-white">Dato 2</td>
-                        <td class="border-b p-2 dark:text-white">Dato 3</td>
-                        <td class="border-b p-2 dark:text-white">Dato 4</td>
-                        <td class="border-b p-2 dark:text-white">Dato 5</td>
-                        <td class="border-b p-2 dark:text-white">Dato 6</td>
-                        <td class="border-b p-2 dark:text-white">Dato 7</td>
-                        <td class="border-b p-2 dark:text-white">Dato 8</td>
+                        <td class="border-b p-2 dark:text-white">1</td>
+                        <td class="border-b p-2 dark:text-white">David Tuta</td>
+                        <td class="border-b p-2 dark:text-white">Recursos Humanos</td>
+                        <td class="border-b p-2 dark:text-white">Administración</td>
+                        <td class="border-b p-2 dark:text-white">Gerente</td>
+                        <td class="border-b p-2 dark:text-white">Juan Pérez</td>
+                        <td class="border-b p-2 dark:text-white">12345</td>
+                        <td class="border-b p-2 dark:text-white">juan.perez@example.com</td>
                         <td class="border-b p-2">
                             <!-- Botón que redirige a otra vista -->
-                            <a
+                            <a href="{{ route('userperformance') }}"
                                 class="py-1 px-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-700">
-                                Ir a Otra Vista
+                                Ir a Mi Desempeño
                             </a>
                         </td>
                         <!-- Agrega más datos según sea necesario -->

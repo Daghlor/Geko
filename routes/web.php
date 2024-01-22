@@ -50,6 +50,10 @@ Route::get('/myperformance', function () {
     return view('buttons-showcase.my-performance');
 })->middleware(['auth'])->name('myperformance');
 
+Route::get('/userperformance', function () {
+    return view('buttons-showcase.user-performance');
+})->middleware(['auth'])->name('userperformance');
+
 
 
 require __DIR__ . '/auth.php';
