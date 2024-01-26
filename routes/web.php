@@ -42,17 +42,17 @@ Route::get('/buttons/text-icon', function () {
     return view('buttons-showcase.text-icon');
 })->middleware(['auth'])->name('buttons.text-icon');
 
-Route::get('/myrouteoflearn', function () {
-    return view('buttons-showcase.my-route-of-learn');
-})->middleware(['auth'])->name('myrouteoflearn');
+Route::get('/assignevaluators', function () {
+    return view('layouts.assign-evaluators');
+})->middleware(['auth'])->name('assignevaluators');
 
-Route::get('/myperformance', function () {
-    return view('buttons-showcase.my-performance');
-})->middleware(['auth'])->name('myperformance');
+Route::get('/collaboratorstoevaluate', function () {
+    return view('layouts.collaborators-to-evaluate');
+})->middleware(['auth'])->name('collaboratorstoevaluate');
 
-Route::get('/userperformance', function () {
-    return view('buttons-showcase.user-performance');
-})->middleware(['auth'])->name('userperformance');
+Route::get('/usercompetences', function () {
+    return view('layouts.user-competences');
+})->middleware(['auth'])->name('usercompetences');
 
 
 

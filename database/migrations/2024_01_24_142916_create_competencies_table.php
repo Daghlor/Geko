@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('competencies', function (Blueprint $table) {
             $table->id();
             $table->string('name_competencia');
-            $table->string('code_ucl');
+            $table->string('code_ucl')->unique();
             $table->string('name_ucl');
             $table->text('description');
             $table->timestamps();

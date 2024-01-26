@@ -21,13 +21,13 @@
         <x-sidebar.sublink title="Text with icon" href="{{ route('buttons.text-icon') }}" :active="request()->routeIs('buttons.text-icon')" />
     </x-sidebar.dropdown> --}}
 
-    <x-sidebar.link title="Mi Ruta de Aprendizaje" href="{{ route('myrouteoflearn') }}" :isActive="request()->routeIs('myrouteoflearn')">
+    <x-sidebar.link title="Asignar Evaluadores" href="{{ route('assignevaluators') }}" :isActive="request()->routeIs('myrouteoflearn')">
         <x-slot name="icon">
             <x-icons.myroute class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>
     </x-sidebar.link>
 
-    <x-sidebar.link title="Mi Desempeño" href="{{ route('myperformance') }}" :isActive="request()->routeIs('myperformance')">
+    <x-sidebar.link title="Colaboradores a evaluar" href="{{ route('collaboratorstoevaluate') }}" :isActive="request()->routeIs('myperformance')">
         <x-slot name="icon">
             <x-icons.myperformance class="flex-shrink-0 w-6 h-6" aria-hidden="true" />
         </x-slot>

@@ -1,19 +1,19 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
 use App\Models\User;
 use Illuminate\Support\Str;
 
-return new class extends Migration
+class UserSeeder extends Seeder
 {
     /**
-     * Run the migrations.
+     * Run the database seeds.
      */
-    public function up(): void
+    public function run(): void
     {
-
         User::create([
             'id' => 1,
             'unique_id' => Str::uuid()->toString(),
@@ -21,19 +21,10 @@ return new class extends Migration
             'lastName' => 'GENERAL',
             'identify' => 1111111111,
             'phone' => 111111111111,
+            'dependence' => 'bogota',
             'email' => 'admin@engagement.com',
             'password' => bcrypt('Engagement.2023'),
-            'address' => 'NN',
-            'city' => 'NN',
             'dateBirth' => '1999/01/01',
-        ]);
+        ])->assignRole('Administrador');
     }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        //
-    }
-};
+}

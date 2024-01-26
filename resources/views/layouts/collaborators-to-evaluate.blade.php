@@ -2,12 +2,15 @@
     <x-slot name="header">
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <h2 class="text-xl font-semibold leading-tight dark:text-white">
-                {{ __('Mi Desempeño') }}
+                {{ __('Tus colaboradores asignados') }}
             </h2>
         </div>
     </x-slot>
 
-    <p class="py-4 text-gray-600 dark:text-gray-400">Tabla de usuarios.</p>
+    <p class="py-4 text-gray-600 dark:text-gray-400">Gracias por ayudarnos a evaluar las competencias de nuestros
+        colaboradores. Por favor, asegúrate de ser justo y objetivo en todo momento. Si tienes alguna pregunta o
+        inquietud, no dudes en comunicarte con el Centro de Excelencia Formación y HRBP.
+    </p>
 
     <div class="py-4">
         <!-- Campos arriba -->
@@ -63,36 +66,30 @@
                 <!-- Encabezado de la tabla -->
                 <thead class="dark:bg-eval-2">
                     <tr>
-                        <th class="border-b p-2 text-left dark:text-white">ID</th>
-                        <th class="border-b p-2 text-left dark:text-white">Evaluador</th>
+                        <th class="border-b p-2 text-left dark:text-white">Nombres</th>
+                        <th class="border-b p-2 text-left dark:text-white">Identificacion</th>
                         <th class="border-b p-2 text-left dark:text-white">Dependencia</th>
                         <th class="border-b p-2 text-left dark:text-white">Area</th>
                         <th class="border-b p-2 text-left dark:text-white">Cargo</th>
-                        <th class="border-b p-2 text-left dark:text-white">Nombres</th>
-                        <th class="border-b p-2 text-left dark:text-white">Identificacion</th>
-                        <th class="border-b p-2 text-left dark:text-white">Correo Electrónico</th>
-                        <th class="border-b p-2 text-left dark:text-white"></th>
+                        <th class="border-b p-2 text-left dark:text-white">Interno/externo</th>
+                        <th class="border-b p-2 text-left dark:text-white">Acreditacion</th>
                         <!-- Agrega más encabezados según sea necesario -->
                     </tr>
                 </thead>
                 <!-- Cuerpo de la tabla -->
                 <tbody>
                     <tr class="dark:bg-eval-0">
-                        <td class="border-b p-2 dark:text-white">1</td>
-                        <td class="border-b p-2 dark:text-white">David Tuta</td>
-                        <td class="border-b p-2 dark:text-white">Recursos Humanos</td>
-                        <td class="border-b p-2 dark:text-white">Administración</td>
-                        <td class="border-b p-2 dark:text-white">Gerente</td>
-                        <td class="border-b p-2 dark:text-white">Juan Pérez</td>
-                        <td class="border-b p-2 dark:text-white">12345</td>
-                        <td class="border-b p-2 dark:text-white">juan.perez@example.com</td>
-                        <td class="border-b p-2">
-                            <!-- Botón que redirige a otra vista -->
-                            <a href="{{ route('userperformance') }}"
-                                class="py-1 px-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:shadow-outline-blue active:bg-blue-700">
-                                Ir a Mi Desempeño
-                            </a>
+                        <td class="border-b p-2 dark:text-white">
+                            <a href="{{ route('usercompetences') }}"
+                                class="text-blue-500 hover:underline font-semibold">David Tuta</a>
                         </td>
+                        <td class="border-b p-2 dark:text-white">12345</td>
+                        <td class="border-b p-2 dark:text-white">Bogota</td>
+                        <td class="border-b p-2 dark:text-white">Recursos Humanos</td>
+                        <td class="border-b p-2 dark:text-white">Gerente</td>
+                        <td class="border-b p-2 dark:text-white"></td>
+                        <td class="border-b p-2 dark:text-white">80%</td>
+
                         <!-- Agrega más datos según sea necesario -->
                     </tr>
                     <!-- Repite este patrón para más filas -->

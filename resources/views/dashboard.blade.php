@@ -8,6 +8,24 @@
     </x-slot>
 
     <div class="p-6 overflow-hidden bg-white rounded-md shadow-md dark:bg-dark-eval-1">
-        {{ __("You're logged in!") }}
+        {{ __('Comentario publico') }}
     </div>
+
+    @role('Administrador')
+        <div class="p-6 overflow-hidden bg-white rounded-md shadow-md dark:bg-dark-eval-1">
+            {{ __('Comentario solo admin') }}
+        </div>
+    @endrole
+
+    @role('Evaluador_Admin')
+        <div class="p-6 overflow-hidden bg-white rounded-md shadow-md dark:bg-dark-eval-1">
+            {{ __('Comentario solo evaluador-admin') }}
+        </div>
+    @endrole
+
+    @role('Evaluador')
+        <div class="p-6 overflow-hidden bg-white rounded-md shadow-md dark:bg-dark-eval-1">
+            {{ __('Comentario evaluador') }}
+        </div>
+    @endrole
 </x-app-layout>

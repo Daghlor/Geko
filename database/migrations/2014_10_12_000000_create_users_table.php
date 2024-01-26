@@ -18,8 +18,7 @@ return new class extends Migration
             $table->string('lastName');
             $table->bigInteger('identify')->unique();
             $table->bigInteger('phone')->unique();
-            $table->string('address', 40);
-            $table->string('city', 50)->nullable();
+            $table->string('dependence', 50)->nullable();
             $table->string('dateBirth', 40)->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();

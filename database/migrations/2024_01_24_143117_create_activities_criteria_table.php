@@ -14,11 +14,13 @@ return new class extends Migration
         Schema::create('activities_criteria', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('competence_id');
+            $table->string('code_ucl_competence');
             $table->string('key_activity');
             $table->text('performance_criterion');
             $table->timestamps();
 
             $table->foreign('competence_id')->references('id')->on('competencies');
+            $table->foreign('code_ucl_competence')->references('code_ucl')->on('competencies');
         });
     }
 
