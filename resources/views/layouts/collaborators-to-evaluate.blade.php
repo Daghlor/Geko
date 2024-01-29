@@ -2,14 +2,17 @@
     <x-slot name="header">
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <h2 class="text-xl font-semibold leading-tight dark:text-white">
-                {{ __('Tus colaboradores asignados') }}
+                {{ __('Colaboradores a Evaluar:') }}
             </h2>
         </div>
     </x-slot>
 
-    <p class="py-4 text-gray-600 dark:text-gray-400">Gracias por ayudarnos a evaluar las competencias de nuestros
-        colaboradores. Por favor, asegúrate de ser justo y objetivo en todo momento. Si tienes alguna pregunta o
-        inquietud, no dudes en comunicarte con el Centro de Excelencia Formación y HRBP.
+    <p class="py-4 text-gray-600 dark:text-gray-400">A continuación comenzarás con la Evaluación de Competencias.
+        Recuerda realizar evaluación con el mayor grado de objetividad posible, manteniendo siempre una postura ética y
+        profesional y guiándote por los criterios de desempeño señalados en la herramienta de Evaluación.
+        <br> <br>
+        Si tienes alguna pregunta o inquietud, no dudes en comunicarte con el Centro de Excelencia Formación.
+
     </p>
 
     <div class="py-4">

@@ -2,16 +2,21 @@
     <x-slot name="header">
         <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <h2 class="text-xl font-semibold leading-tight">
-                {{ __('Asignar Evaluadores') }}
+                {{ __('Asignación de colaboradores:') }}
             </h2>
         </div>
     </x-slot>
 
-    <p class="py-4 text-gray-600 dark:text-gray-400">Gracias por ayudarnos en el proceso de evaluación de competencias de
-        nuestros colaboradores. Por favor, asigna a cada persona el evaluador que hará su respectiva evaluación.
-        Asegúrate de que los evaluadores asignados tengan en cuenta las habilidades y competencias de los colaboradores
-        y que la carga de trabajo sea equitativa. Si tienes alguna pregunta o inquietud, no dudes en comunicarte con el
-        Centro de Excelencia Formación y HRBP.
+    <p class="py-4 text-gray-600 dark:text-gray-400">Bienvenido al proceso de Evaluación de Competencias. Para realizar
+        este proceso de manera íntegra, por favor, asigna a cada colaborador presente en este listado, el Evaluador
+        Interno que realizará su evaluación.
+        <br> <br>
+        Asegúrate de que los Evaluador Internos que asignes cuenten con los conocimientos técnicos que se evaluarán a
+        los colaboradores.
+        <br> <br>
+        Si tienes alguna pregunta o inquietud, no dudes en comunicarte con el Centro de Excelencia Formación y HRBP.
+
+
     </p>
 
     <div class="overflow-x-auto">
